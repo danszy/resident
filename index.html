@@ -5,13 +5,18 @@
   
   function calculateTime() {
 
-    var person = $("#personSelect").val(); 
-    alert(person);
+    var person = $("#personSelect").val();     
     var eta = $('#eta').val();
-
-    var result = eta * 24;
-    var resultText = result + " minutes or " + result/60 + " hours";
-    $('#result').html(resultText);
+    var result = 0;
+    if (person == "Liam"){
+     result = eta * 24;
+     var resultText = result + " minutes or " + result/60 + " hours";
+     $('#result').html(resultText);
+    }
+    
+    if (person == "Jared"){
+      $('#result').html("Anytime between 5 minutes and 7 hours");
+    }
   }
   
   </script>

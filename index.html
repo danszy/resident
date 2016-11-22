@@ -5,7 +5,8 @@
   
   function calculateTime() {
 
-
+    var person = $("#personSelect").val(); 
+    alert(person);
     var eta = $('#eta').val();
 
     var result = eta * 24;
@@ -18,8 +19,9 @@
 <h1> How long will you wait? </h1>
 
 Person:
-  <select>
+  <select id="personSelect">
   <option> Liam </option>
+    <option> Jared </option>
   </select>
 
   <br> <br>

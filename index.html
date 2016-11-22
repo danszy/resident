@@ -1,15 +1,20 @@
 <html>
+<head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
 <script>
   
   function calculateTime() {
-    var eta = $("#eta").html();
+
+
+    var eta = $('#eta').val();
+
     var result = eta * 24;
     var resultText = result + " minutes or " + result/60 + " hours";
-    $("#result").html(resultText);
+    $('#result').html(resultText);
   }
   
   </script>
+</head>
 <h1> How long will you wait? </h1>
 
 Person:

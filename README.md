@@ -1,0 +1,2 @@
+# resident
+Time wasted waiting

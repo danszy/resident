@@ -3,7 +3,10 @@
 <script>
   
   function calculateTime() {
-    alert("test");
+    var eta = $("#eta").html();
+    var result = eta * 24;
+    var resultText = result + " minutes or " + result/60 + " hours";
+    $("#result").html(resultText);
   }
   
   </script>
@@ -16,7 +19,7 @@ Person:
 
   <br> <br>
 
-"ETA": 
+"ETA" (in minutes): 
   <input id="eta"> </input>
 
 <br> <br>
